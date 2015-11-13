@@ -1,0 +1,104 @@
+
+
+<!DOCTYPE html>
+
+<!--
+  Student Name: Mohammad Kothawala
+-->
+<html lang="en">
+  <head>
+    <title>Display Movie Information</title>
+    <meta charset="utf-8"/>
+    <script type="text/javascript" src="movies.js"></script>
+      
+     <style type="text/css">
+        
+         #poster{
+            display:; 
+            width: 30em;
+             word-wrap: break-word;
+            
+            /*position:absolute;*/
+            top:0;
+            right:0;
+            /*overflow: auto*/
+            float: right;
+            height: 10px;
+             
+           /* padding-top: 5px;*/
+            padding-right: 350px;
+        }
+         
+         #title{
+            position: relative;
+            height: 100px;
+            padding-top: 25px;
+            padding-right: 200px;
+             font-weight: normal;
+         
+         }
+         #genre{
+            position: relative;
+            padding-top: 25px;
+            padding-right: 200px;
+                
+         }
+         
+         #overview{
+             width: 30em;
+             word-wrap: break-word;
+             position: relative;
+            
+            display: inline; 
+             padding-left: 945px;
+             padding-right: 10px;
+         }
+         
+       
+         
+         #credits{
+               position: relative;
+            padding-top: 25px;
+            padding-right: 200px;
+                
+             
+         }
+       
+         
+      
+         #output1{
+           float:left;
+             
+           background:;
+        }
+
+      
+         
+         
+         
+     </style>
+  </head>
+  <body onload="initialize();" bgcolor="#D5F7F7"; >
+    <form>
+       <label>Movie title: <input type="text" id="form-input"/></label>
+       <input type="button" onclick="sendRequest();" value="Display Info"/>
+    </form>
+      
+            <div id="output1"></div>
+            
+            <div id="poster">
+                 <div id="title"></div>
+                <div id="genre"></div>
+                <div id="overview"></div>
+                <div id="credits"></div>
+            </div>
+     
+     
+            
+            <div id="releaseDate"></div>
+            
+
+  </body>
+</html>
+
+

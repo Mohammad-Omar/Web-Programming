@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<!-- Student Name:Mohammad Kothawala   -->
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8"/>
+    
+    <style type="text/css">
+        #map{
+            width:600px;
+        height:500px;
+            top: auto;
+            float: right;
+            padding-right: 5px;
+            padding-top: 5px;
+        }  
+        #display_list{
+            position: absolute;
+            word-wrap: break-word;
+            display: inline;
+            top: 10;
+            padding-right: 945px;
+        
+        
+        }
+        #ddd{
+            position: relative;
+            word-wrap: break-word;
+            display: inline; 
+        }
+        #snippet{
+             width: 200px;
+             word-wrap: break-word;
+             position: relative;
+            
+             display: inline-block;
+        }
+        
+    </style>
+      <title>Web Mashup: Display Best Restaurants on a Map</title>
+      <script type="text/javascript" src="yelp.js"></script>
+      <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAR_jFe2PDa-L179aOb56aRyFryQrZCiSo"> </script>
+  </head>
+  <body onload="initialize();">
+    <form>
+       <label>Search Terms: <input type="text" id="search"/></label>
+       <input type="button" onclick="sendRequest();" value="Find"/>
+    </form>
+      <div id="map"></div>
+      <div id="display_list"> 
+          <p id = "title"></p>
+          <ol id="ddd">
+            <p id="snippet"></p>
+          </ol>
+      </div>
+      <div id="output">&nbsp;</div>
+  </body>
+</html>
